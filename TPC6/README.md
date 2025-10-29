@@ -1,0 +1,1 @@
+Neste tpc fiz uma aplicaçao que compila todas as questoes da ficha da respetiva aula pratica, onde trabalhei com a criaçao e carregamento de ficheiro para guardar dados, criaçao de graficos entre outros.
