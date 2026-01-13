@@ -39,7 +39,7 @@ Foi introduzida uma regra de negócio específica onde doentes idosos (> 65 anos
 •	Estrutura de Dados dos Doentes:
 Os doentes não são apenas números. O sistema carrega um dataset real (pessoas (1).json), permitindo associar nomes, idades e géneros aos eventos, o que enriquece a análise demográfica posterior.
 
-3. 2. Interface Gráfica (gui_app.py)
+3.2. Interface Gráfica (gui_app.py)
 Desenvolvida com FreeSimpleGUI, a interface permite a configuração em tempo real sem necessidade de alterar o código fonte.
 •	Funcionalidades de Controlo:
 o	Configuração de parâmetros: Nº de Médicos, Taxa de Chegada, Tempo Médio de Consulta e Duração da Simulação.
@@ -47,7 +47,7 @@ o	Seleção de Distribuição Estatística: Exponencial, Normal ou Uniforme.
 o	Modo Escuro/Claro: O utilizador pode alternar o tema visual da aplicação dinamicamente.
 •	Feedback Imediato: Um painel de relatório apresenta, após a execução, os KPIs (Key Performance Indicators) principais: média de idades, distribuição de sexos e contagem por cor de triagem.
 
-3. 3. Módulo de Visualização (plots.py)
+3.3. Módulo de Visualização (plots.py)
 Utiliza a biblioteca matplotlib para gerar quatro tipos de visualizações essenciais11:
 	-Evolução da Fila: Um gráfico de linha preenchido que mostra os picos de afluência ao longo do tempo.
 	-Ocupação Médica: Gráfico degrau (step plot) que visualiza a percentagem de médicos ocupados a cada minuto.
@@ -58,13 +58,13 @@ Utiliza a biblioteca matplotlib para gerar quatro tipos de visualizações essen
 
 4. Manual de Utilização e Parâmetros
 
-4. 1. Pré-requisitos
+4.1. Pré-requisitos
 O sistema requer Python 3.8+ e as seguintes bibliotecas:
 Numpy 
 Matplotlib 
 FreeSimpleGUI
 
-4. 2. Configuração de Inputs
+4.2. Configuração de Inputs
 Na interface da aplicação, o utilizador deve definir:
     -Quantidade de medicos: Numero de proficionais de saude disponiveis.
     -Taxa Chegada: Parâmetro labda de Poisson. Define a "pressão" sobre a clínica.
@@ -76,13 +76,13 @@ Na interface da aplicação, o utilizador deve definir:
 5. Análise de Resultados e Métricas
 O sistema gera um relatório textual e gráfico que permite responder às questões levantadas no enunciado12:
 
-5. 1. Impacto da Taxa de Chegada (Cenário de Stress)
+5.1. Impacto da Taxa de Chegada (Cenário de Stress)
 Ao aumentar a taxa de chegada de 10 para 30 doentes/h, mantendo 3 médicos, observa-se que o tamanho da fila não cresce linearmente, mas sim exponencialmente. Isto valida a teoria de filas, onde a aproximação da taxa de utilização a 100% causa tempos de espera que tendem para infinito.
 
-5. 2. Eficiência da Triagem de Manchester
+5.2. Eficiência da Triagem de Manchester
 A introdução da prioridade por cores demonstrou que, em cenários de alta ocupação, os doentes "Verdes" e "Amarelos" são penalizados com tempos de espera significativamente superiores, enquanto os "Vermelhos" mantêm tempos de espera próximos de zero, validando a segurança clínica do modelo.
 
-5. 3. Indicadores Calculados
+5.3. Indicadores Calculados
 •	Satisfação Individual: Calculada através da fórmula 100 - (EsperaReal - 10) * 1.5, penalizando esperas superiores a 10 minutos.
 •	Ocupação Média: Somatorio do tempo trabalhado / (Numero de medicos * Tempo Simulação)
 
