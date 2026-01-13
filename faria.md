@@ -25,7 +25,7 @@ O principal objetivo foi a construção de uma ferramenta capaz de simular o flu
 3. Arquitetura do Sistema
 A aplicação foi estruturada de forma modular para garantir a separação entre a lógica de negócio, a interface e a visualização.
 
-3. 1. Módulo de Simulação (clinic.py)
+3.1. Módulo de Simulação (clinic.py)
 Este é o "motor" do sistema. A função simula gere o relógio da simulação e a lista de eventos (Queue de Eventos).
 •	Lógica de Prioridade (Protocolo de Manchester Adaptado):
 Ao contrário de uma fila FIFO (First-In, First-Out) simples, o sistema implementa uma fila prioritária baseada na gravidade clínica. A gravidade é atribuída probabilisticamente:
