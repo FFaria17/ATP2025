@@ -117,9 +117,18 @@ A métrica de satisfação revelou-se um indicador sensível à qualidade do ser
 7. Conclusões e Trabalho Futuro
 A simulação cumpriu com sucesso os objetivos de modelar um sistema complexo com recursos limitados. A ferramenta permite aos gestores hospitalares prever quantos médicos são necessários para um determinado fluxo de doentes, garantindo níveis de serviço aceitáveis.
 
-![Grafico](Trabalho/Graphs/1.png)
+Anexamos agora uma seria de graficos que sao possiveis de obter na nosssa simulaçao. Numa fase inicial usamos como valores: 3 Medicos, 10 doentes por horas, 15 minutos de duração de consulta e 480 minutos de simulação 
 
+<img width="955" height="500" alt="1" src="https://github.com/user-attachments/assets/ed7adc46-c8da-4a22-9e1c-45a74029c23b" />
+<img width="897" height="485" alt="Captura de ecrã 2026-01-13 152303" src="https://github.com/user-attachments/assets/eb9bca49-b414-4131-a4ef-205c0a26a932" />
+<img width="925" height="491" alt="Captura de ecrã 2026-01-13 152352" src="https://github.com/user-attachments/assets/a79398f7-313c-40d3-9804-2e2d3fd1d968" />
+<img width="952" height="488" alt="Captura de ecrã 2026-01-13 152429" src="https://github.com/user-attachments/assets/d8e323a8-536b-4425-aff1-c1da177b66d3" />
+<img width="733" height="570" alt="Captura de ecrã 2026-01-13 152503" src="https://github.com/user-attachments/assets/0ab129cc-8cc3-4221-b923-fe1de330c142" />
 
-<img width="955" height="500" alt="1" src="https://github.com/user-attachments/assets/b8362225-73be-45ba-8f9b-2c8f27f6d2a0" />
+Agora, numa segunda fase, aumentamos os medicos para 5 de modo a observar as alteraçoes nos graficos de maior relevancia.
+
+<img width="932" height="477" alt="Captura de ecrã 2026-01-13 152551" src="https://github.com/user-attachments/assets/9df87d6c-d5f3-4ca1-9056-5b5ac705f538" />
+
+<img width="922" height="470" alt="Captura de ecrã 2026-01-13 152633" src="https://github.com/user-attachments/assets/154c8a0e-2df3-465a-9ff8-3793189ad13d" />
 
 Projeto realizado por: Afonso Faria (a111747), Duarte Matos (a110102), Simão Ribeiro (a111844).
